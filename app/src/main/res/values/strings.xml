@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ProyectoFinal</string>
+    <!--Formulario de Login-->
+    <string name="nombre_usuario">Username</string>
+    <string name="contraseña">Password</string>
+    <string name="correo_electrónico">email</string>
+    <string name="nuevo_usuario">Nuevo usuario</string>
+
+    <!--Errores del formulario-->
+    <string name="requerido">Campo Requerido</string>
+    <string name="Long_insuf">La longitud es insuficiente</string>
+
+    <!--Valores icono del action BAr-->
+    <string name="icono_de_ayuda">Icono de ayuda</string>
+    <string name="icono_de_retroceder">Icono de retroceso</string>
+    <string name="title_activity_menu_drawer">MenuDrawerActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
