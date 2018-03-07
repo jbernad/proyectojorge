@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A9F5F2"
+    tools:context="com.example.jorgebr.proyectofinal.MainActivity">
+    <!--Imagen superior del programa-->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:background="@mipmap/ic_perro" />
+    <!--Petición del Nombre de Usuario-->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/nomuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView">
+        <EditText
+            android:id="@+id/TxtNombreUsuarioMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nombre_usuario" />
+    </android.support.design.widget.TextInputLayout>
+    <!--Petición del Contraseña-->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/passuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nomuser">
+        <EditText
+            android:id="@+id/TxtcontraseñaMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="@string/contraseña" />
+    </android.support.design.widget.TextInputLayout>
+    <!--Botón de Acceso-->
+    <Button
+        android:id="@+id/Btnlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/passuser"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/login" />
+    <!--Botónde Registro-->
+    <Button
+        android:id="@+id/BtnRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/Btnlogin"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/register" />
+    <!--Sitio donde escribimos nuestro correo para contacto con administrador-->
+    <EditText
+        android:id="@+id/TxtMailUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/BtnContact"
+        android:layout_marginBottom="11dp"
+        android:layout_toStartOf="@+id/BtnRegistro"
+        android:ems="10"
+        android:hint="Introduzca su correo"
+        android:inputType="textEmailAddress" />
+    <!--Botón para enviar mensaje al administrador-->
+    <ImageButton
+        android:id="@+id/BtnContact"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignEnd="@+id/BtnRegistro"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/correo" />
+</RelativeLayout>

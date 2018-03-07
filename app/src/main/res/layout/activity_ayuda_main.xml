@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d2b4de"
+    tools:context="com.example.jorgebr.proyectofinal.AyudaMainActivity">
+    <!--Texto informativo de la acción que se puede realizar-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="35dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:text="Debe registrarse para acceder a la aplicación, hay una cuenta de administrador con el que puede contactar enviando un correo introduciendo su email en la parte inferior y darle al botón del sobre"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:id="@+id/textView" />
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@mipmap/ic_finayuda"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="23dp" />
+</RelativeLayout>

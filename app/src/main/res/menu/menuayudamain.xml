@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--Creamos los items-->
+    <item
+        android:id="@+id/ayudamain"
+        android:icon="@mipmap/ic_ayuda"
+        android:title="@string/icono_de_ayuda"
+        app:showAsAction="always"
+    />
+</menu>

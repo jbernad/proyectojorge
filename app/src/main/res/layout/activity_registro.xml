@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A9F5F2"
+    android:orientation="vertical"
+    android:weightSum="2"
+    tools:context="com.example.jorgebr.proyectofinal.RegistroActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--Nombre usuario-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/nomuser" >
+            <EditText
+                android:id="@+id/TxtNombreUsuarioReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/nombre_usuario" />
+        </android.support.design.widget.TextInputLayout>
+        <!--Petición del Contraseña-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/passuser"
+            android:layout_weight="1"
+            android:layout_below="@+id/nomuser">
+            <EditText
+                android:id="@+id/TxtcontraseñaReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="@string/contraseña" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--Petición del Email-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passuser"
+            android:layout_weight="1"
+            android:id="@+id/textInputLayoutEmail">
+            <EditText
+                android:id="@+id/TxtemailReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="@string/correo_electrónico" />
+        </android.support.design.widget.TextInputLayout>
+        <!--Petición del DNI-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/textInputLayoutDNI">
+            <EditText
+                android:id="@+id/TxtDNIReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="DNI" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--Petición del Telefono-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/textInputLayoutPhone">
+            <EditText
+                android:id="@+id/TxtPhoneReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Teléfono" />
+        </android.support.design.widget.TextInputLayout>
+        <!--Petición del Telefono-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/nombremascota">
+            <EditText
+                android:id="@+id/Txtmascota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="nombre mascota" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <!--Botón para sacar la foto-->
+        <Button
+            android:id="@+id/btncamara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textInputLayoutPhone"
+            android:layout_marginLeft="30dp"
+            android:text="Sacar Foto" />
+        <!--Botón foto de la galeria-->
+        <Button
+            android:id="@+id/btgaleria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btncamara"
+            android:layout_alignBottom="@+id/btncamara"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="60dp"
+            android:text="Galeria"
+            android:layout_weight="0.13" />
+    </LinearLayout>
+    <!--Donde guardamos la foto-->
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="100dp"
+        android:id="@+id/camarita"
+        android:src="@drawable/ic_camarita"
+        android:layout_below="@+id/btncamara"
+        android:layout_centerHorizontal="true" />
+    <ImageButton
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginLeft="123dp"
+        android:background="@mipmap/ic_insertar"/>
+</LinearLayout>
