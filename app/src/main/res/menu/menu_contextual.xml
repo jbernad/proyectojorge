@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--CREAMOS LOS ITEMS DEL MENU-->
+    <item
+        android:id="@+id/menu_borrar"
+        android:title="borrar"
+        android:icon="@mipmap/ic_borrar"
+        app:showAsAction="always"
+    />
+    <item
+        android:id="@+id/menu_editar"
+        android:title="editar"
+        android:icon="@mipmap/ic_editar"
+        app:showAsAction="always"
+        />
+
+</menu>
